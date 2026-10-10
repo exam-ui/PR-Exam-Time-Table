@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MSBTE Winter-2026 Practical Time Table</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f6fb;--card:#fff;--tx:#1b2333;--mu:#5d6679;--ac:#1f3864;--act:#fff;--bd:#cdd5e4;--aft:#eef1f8;--bad:#b3261e;--ok:#17703a;--inp:#fff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121620;--card:#1a2030;--tx:#e6eaf3;--mu:#9aa4ba;--ac:#7fa2e8;--act:#10151f;--bd:#33405c;--aft:#202842;--bad:#ff8a80;--ok:#6fd49a;--inp:#121620}}
+:root[data-theme="dark"]{--bg:#121620;--card:#1a2030;--tx:#e6eaf3;--mu:#9aa4ba;--ac:#7fa2e8;--act:#10151f;--bd:#33405c;--aft:#202842;--bad:#ff8a80;--ok:#6fd49a;--inp:#121620}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+header{background:var(--ac);color:var(--act);padding:16px;text-align:center}
+header h1{margin:0;font-size:20px}header p{margin:3px 0 0;font-size:13px;opacity:.9}
+main{max-width:1100px;margin:0 auto;padding:12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px;margin-bottom:12px}
+.card h2{margin:0 0 8px;font-size:16px;color:var(--ac)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.bar .sp{flex:1}
+button{font:inherit;padding:7px 12px;border-radius:7px;border:1px solid var(--ac);background:var(--ac);color:var(--act);cursor:pointer}
+button.alt{background:transparent;color:var(--ac)}button.del{background:transparent;color:var(--bad);border-color:var(--bad);padding:4px 8px}
+input,select{font:inherit;padding:6px 8px;border:1px solid var(--bd);border-radius:6px;background:var(--inp);color:var(--tx);max-width:100%}
+label{display:inline-flex;flex-direction:column;font-size:12px;color:var(--mu);gap:2px;margin:0 10px 8px 0}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{border:1px solid var(--bd);padding:6px 8px;text-align:left}
+th{background:var(--ac);color:var(--act);white-space:nowrap}
+td.c{text-align:center}tr.aft td{background:var(--aft)}tr.nd td{border-top:3px solid var(--ac)}
+.chip{display:inline-block;background:var(--aft);border:1px solid var(--bd);border-radius:12px;padding:2px 10px;margin:0 6px 6px 0}
+.chip b{cursor:pointer;color:var(--bad);margin-left:6px}
+.msg{padding:8px 10px;border-radius:7px;margin-top:8px}.bad{background:rgba(179,38,30,.12);color:var(--bad)}.ok{background:rgba(23,112,58,.12);color:var(--ok)}
+.sm input,.sm select{width:100%;min-width:70px}.mu{color:var(--mu);font-size:12px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;padding:16px}
+.modal .card{width:320px;margin:0}
+@media print{header button,.noprint{display:none!important}body{background:#fff;color:#000}.card{border:0;padding:0}th{background:#1f3864!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}tr.aft td{background:#eee!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}table{min-width:0;font-size:11px}@page{size:A4 landscape;margin:10mm}}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script id="data" type="application/json">{"title":"MSBTE Winter-2026 Practical Examination - Time Table","org":"Dr. Panjabrao Deshmukh Polytechnic, Amravati - Computer Engineering Department","start":"2026-10-21","end":"2026-10-31","excl":["2026-10-24","2026-10-25"],"m":["10:30","13:30"],"a":["14:00","18:00"],"per":2,"subs":[{"s":"III","n":"OOP","c":"313304","e":"Shri R.R.Rajote","x":"Ku.S.S.Badhe","d":"2026-10-21"},{"s":"V","n":"SPI","c":"315003","e":"Ku.S.S.Patil","x":"Ku.B.P.Waghmare","d":"2026-10-26"},{"s":"III","n":"DSU","c":"313301","e":"Shri G.P.Datir","x":"Ku.S.S.Badhe","d":"2026-10-22"},{"s":"V","n":"OSY","c":"315319","e":"Shri R.H.Rathod","x":"Ku.P.S.Judape","d":"2026-10-21"},{"s":"V","n":"ACN","c":"315321","e":"Shri R.H.Rathod","x":"Ku.P.C.Jajoo","d":"2026-10-23"},{"s":"V","n":"STE","c":"315323","e":"Ku.S.S.Patil","x":"Ku.P.C.Jajoo","d":"2026-10-28"},{"s":"III","n":"DMS","c":"313302","e":"Ku.P.S.Judape","x":"Shri G.P.Datir","d":"2026-10-23"},{"s":"V","n":"ENDS","c":"315002","e":"Ku.B.P.Waghmare","x":"Ku.S.S.Karale","d":"2026-10-22"},{"s":"III","n":"DTE","c":"313303","e":"Ku.S.S.Karale","x":"Ku.S.S.Badhe","d":"2026-10-26"},{"s":"III","n":"CGR","c":"313001","e":"Ku.M.S.Dahake","x":"Ku.S.S.Patil","d":"2026-10-27"},{"s":"V","n":"ITR","c":"315004","e":"Shri R.H.Rathod","x":"Shri G.P.Datir","d":"2026-10-27"}]}</script>
+<script id="app-js">
+const GOOGLE_SCRIPT_URL='https://script.google.com/macros/s/AKfycbwPNzgu30vr-jxPtgYqIDIyqBEdrHx4w7LYyAxjNQ9JktFrLdWeGwlAfWeMCh5gpYol/exec';
+let D=JSON.parse(document.getElementById('data').textContent),PASS='';
+async function api(b){if(GOOGLE_SCRIPT_URL.startsWith('PASTE'))return{ok:false,error:'GOOGLE_SCRIPT_URL is not set in the HTML file.'};try{const r=await fetch(GOOGLE_SCRIPT_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({...b,pass:PASS})});return await r.json()}catch(e){return{ok:false,error:'Network error: '+e.message}}}
+const $=s=>document.querySelector(s),SEM=['I','II','III','IV','V','VI'],DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+let admin=false,dirty=false,F={sem:'',q:''};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=i=>i.split('-').reverse().join('/'),dow=i=>DN[new Date(i+'T00:00:00Z').getUTCDay()];
+const t12=t=>{let[h,m]=t.split(':').map(Number);const p=h>=12?'PM':'AM';h=h%12||12;return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+' '+p};
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+const SES=()=>[{n:'Morning',b:'Batch I',t:t12(D.m[0])+' - '+t12(D.m[1])},{n:'Afternoon',b:'Batch II',t:t12(D.a[0])+' - '+t12(D.a[1])}];
+function days(){const o=[];for(let d=new Date(D.start+'T00:00:00Z');d<=new Date(D.end+'T00:00:00Z');d=new Date(d.getTime()+864e5)){const i=d.toISOString().slice(0,10);if(!D.excl.includes(i))o.push(i)}return o}
+const ppl=s=>[s.e,s.x].map(p=>p.trim().toLowerCase()).filter(Boolean);
+const clash=(a,b)=>a.s===b.s?'same semester ('+a.s+')':(ppl(a).find(p=>ppl(b).includes(p))?'shared staff':'');
+function conflicts(){const o=[],ds=days();
+ if(D.m[0]>=D.m[1]||D.a[0]>=D.a[1]||D.m[1]>=D.a[0])o.push('Session timings overlap or are invalid (Morning must end before Afternoon starts).');
+ if(D.m[0]<'10:30'||D.a[1]>'18:00')o.push('Sessions must lie within 10:30 AM - 06:00 PM.');
+ D.subs.forEach((s,i)=>{if(!s.d)o.push(s.n+': no date assigned.');else if(!ds.includes(s.d))o.push(s.n+': '+fmt(s.d)+' is not an available exam date.');
+  D.subs.slice(i+1).forEach(t=>{if(s.d&&s.d===t.d){const c=clash(s,t);if(c)o.push(fmt(s.d)+': '+s.n+' and '+t.n+' clash ('+c+').')}})});
+ const by={};D.subs.forEach(s=>s.d&&(by[s.d]=(by[s.d]||0)+1));Object.entries(by).forEach(([d,n])=>{if(n>D.per)o.push(fmt(d)+': '+n+' subjects (limit '+D.per+' per day).')});
+ return o}
+function auto(){const ds=days(),rest=D.subs.slice();D.subs.forEach(s=>s.d='');
+ for(const d of ds){if(!rest.length)break;const g=[rest.shift()];
+  for(let i=0;i<rest.length&&g.length<D.per;){if(g.every(x=>!clash(x,rest[i])))g.push(rest.splice(i,1)[0]);else i++}
+  g.forEach(s=>s.d=d)}
+ mark();renderAll();if(rest.length)say('Not enough days: '+rest.map(s=>s.n).join(', ')+' left unscheduled.',1)}
+function rows(){const by={};D.subs.forEach(s=>s.d&&(by[s.d]=by[s.d]||[]).push(s));const r=[];
+ Object.keys(by).sort().forEach(d=>SES().forEach(se=>by[d].slice().sort((a,b)=>SEM.indexOf(a.s)-SEM.indexOf(b.s)).forEach(s=>r.push({d,se,s}))));
+ return r.filter(x=>(!F.sem||x.s.s===F.sem)&&(!F.q||[x.s.n,x.s.c,x.s.e,x.s.x].join(' ').toLowerCase().includes(F.q)))}
+function drawTT(){let p='',h='';
+ rows().forEach(({d,se,s})=>{const nd=d!==p&&p;p=d;h+=`<tr class="${se.n==='Afternoon'?'aft':''} ${nd?'nd':''}"><td>${fmt(d)}</td><td>${dow(d)}</td><td>${se.n}</td><td>${se.t}</td><td class="c">${se.b}</td><td class="c">${esc(s.s)}</td><td><b>${esc(s.n)}</b></td><td>${esc(s.c)}</td><td>${esc(s.e)}</td><td>${esc(s.x)}</td></tr>`});
+ $('#tt').innerHTML=h?`<table><tr><th>Date</th><th>Day</th><th>Session</th><th>Time</th><th>Batch</th><th>Sem</th><th>Subject</th><th>Code</th><th>Examiner</th><th>Expert</th></tr>${h}</table>`:'<p class="mu">No practical exams match.</p>'}
+function say(t,bad){const e=$('#st');if(e){e.className='msg '+(bad?'bad':'ok');e.textContent=t}}
+function mark(){dirty=true;say('Unsaved changes - click Save to Google Drive to make them visible to everyone.',1)}
+function chk(){const c=$('#cf');if(!c)return;const o=conflicts();c.className='msg '+(o.length?'bad':'ok');c.innerHTML=o.length?'<b>Conflicts:</b><br>'+o.map(esc).join('<br>'):'No overlaps or staff clashes found.'}
+function setD(k,v){D[k]=v;mark();renderAll()}
+function setT(k,i,v){D[k][i]=v;mark();renderAll()}
+function exAdd(){const v=$('#ex').value;if(v&&!D.excl.includes(v)){D.excl.push(v);D.excl.sort();mark();renderAll()}}
+function exDel(i){D.excl.splice(i,1);mark();renderAll()}
+function sub(i,k,v){D.subs[i][k]=v;mark();drawTT();chk()}
+function addS(){D.subs.push({s:'V',n:'',c:'',e:'',x:'',d:''});mark();renderAll()}
+function delS(i){if(confirm('Delete '+(D.subs[i].n||'this subject')+'?')){D.subs.splice(i,1);mark();renderAll()}}
+async function save(){const o=conflicts();if(o.length)return say('Fix the conflicts before saving.',1);say('Saving...');const r=await api({action:'save',data:D});if(r.ok){dirty=false;say('Saved to Google Drive - everyone now sees this time table.')}else say('Could not save: '+r.error,1)}
+async function login(){PASS=$('#lp').value;$('#le').textContent='Checking...';const r=await api({action:'check'});if(r.ok){admin=true;$('#lm').remove();renderAll()}else{PASS='';$('#le').textContent=r.error==='Wrong passcode'?'Wrong passcode.':r.error}}
+function loginBox(){const m=document.createElement('div');m.className='modal';m.id='lm';m.innerHTML='<div class="card"><h2>Admin Login</h2><input id="lp" type="password" placeholder="Passcode" style="width:100%" autocomplete="off"><div id="le" class="mu" style="color:var(--bad);min-height:18px"></div><div class="bar"><button onclick="login()">Login</button><button class="alt" onclick="this.closest(\'.modal\').remove()">Cancel</button></div></div>';document.body.appendChild(m);$('#lp').focus();$('#lp').onkeydown=e=>{if(e.key==='Enter')login()}}
+function logout(){if(dirty&&!confirm('Discard unsaved changes?'))return;if(dirty)location.reload();admin=false;renderAll()}
+function parseRows(rows){const g=(r,k)=>{for(const key in r){if(k.includes(key.toLowerCase().replace(/[^a-z]/g,'')))return String(r[key]).trim()}return''};
+ const subs=[];let skip=0;
+ rows.forEach(r=>{let v=g(r,['semester','sem']).toUpperCase().replace(/SEM(ESTER)?|[^A-Z0-9]/g,'');if(/^\d+$/.test(v))v=SEM[+v-1]||v;
+  const n=g(r,['subject','subjectname']);if(!n&&!v)return;
+  if(!n||!SEM.includes(v)){skip++;return}
+  subs.push({s:v,n,c:g(r,['subjectcode','code']),e:g(r,['nameofexaminer','examiner']),x:g(r,['expert']),d:''})});
+ return{subs,skip}}
+async function importX(inp){const f=inp.files[0];inp.value='';if(!f)return;
+ if(!window.XLSX)return say('Excel reader could not load - check your internet connection.',1);
+ let r;try{const wb=XLSX.read(await f.arrayBuffer(),{type:'array'});r=parseRows(XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]],{defval:''}))}catch(e){return say('Could not read the file: '+e.message,1)}
+ if(!r.subs.length)return say('No subjects found. Use columns: SEMESTER, SUBJECT, SUBJECT CODE, NAME OF EXAMINER, EXPERT.',1);
+ if(D.subs.length&&!confirm('Replace the current '+D.subs.length+' subjects with '+r.subs.length+' from "'+f.name+'"?'))return;
+ D.subs=r.subs;auto();
+ if(!D.subs.some(s=>!s.d))say('Imported '+r.subs.length+' subjects and generated the time table'+(r.skip?' ('+r.skip+' rows skipped: missing subject or semester)':'')+'. Review it, then save.')}
+function adminHTML(){const ds=days(),I=(t,k,i,v,e='')=>`<label>${t}<input type="time" value="${v}" onchange="setT('${k}',${i},this.value)" ${e}></label>`;
+ return `<section class="card noprint"><h2>Admin Panel</h2><div class="bar"><button onclick="auto()">Auto-schedule</button><button onclick="save()">Save to Google Drive</button><span class="sp"></span><button class="alt" onclick="logout()">Logout</button></div><div id="st"></div>
+ <h3>Exam window &amp; sessions</h3>
+ <label>Start date<input type="date" value="${D.start}" onchange="setD('start',this.value)"></label><label>End date<input type="date" value="${D.end}" onchange="setD('end',this.value)"></label><label>Subjects per day<input type="number" min="1" max="4" value="${D.per}" style="width:70px" onchange="setD('per',+this.value||1)"></label><br>
+ ${I('Morning from','m',0,D.m[0])}${I('Morning to','m',1,D.m[1])}${I('Afternoon from','a',0,D.a[0])}${I('Afternoon to','a',1,D.a[1])}<br>
+ <label>No exam on (add date)<input id="ex" type="date"></label><button class="alt" onclick="exAdd()">Add</button><div>${D.excl.map((x,i)=>`<span class="chip">${fmt(x)}<b onclick="exDel(${i})">&times;</b></span>`).join('')}</div>
+ <h3>Subjects &amp; staff</h3><div class="bar"><button onclick="$('#xf').click()">Upload Excel (subjects &amp; staff)</button><input id="xf" type="file" accept=".xlsx,.xls,.csv" hidden onchange="importX(this)"><span class="mu">Columns: SEMESTER, SUBJECT, SUBJECT CODE, NAME OF EXAMINER, EXPERT. Replaces the list and generates the time table.</span></div><p class="mu">Each subject is held on one date: Batch I in the Morning session, Batch II of the same class in the Afternoon session.</p>
+ <div class="wrap sm"><table><tr><th>Sem</th><th>Subject</th><th>Code</th><th>Examiner</th><th>Expert</th><th>Date</th><th></th></tr>${D.subs.map((s,i)=>`<tr><td><select onchange="sub(${i},'s',this.value)">${SEM.map(x=>`<option ${x===s.s?'selected':''}>${x}</option>`).join('')}</select></td><td><input value="${esc(s.n)}" oninput="sub(${i},'n',this.value)"></td><td><input value="${esc(s.c)}" oninput="sub(${i},'c',this.value)"></td><td><input value="${esc(s.e)}" oninput="sub(${i},'e',this.value)"></td><td><input value="${esc(s.x)}" oninput="sub(${i},'x',this.value)"></td><td><select onchange="sub(${i},'d',this.value)"><option value="">-</option>${ds.map(d=>`<option value="${d}" ${d===s.d?'selected':''}>${fmt(d)} ${dow(d).slice(0,3)}</option>`).join('')}</select></td><td><button class="del" onclick="delS(${i})">&times;</button></td></tr>`).join('')}</table></div>
+ <div class="bar" style="margin-top:8px"><button class="alt" onclick="addS()">+ Add subject</button><span class="sp"></span><span class="mu">Change the passcode in Apps Script &gt; Script properties &gt; ADMIN_PASS</span></div><div id="cf"></div></section>`}
+function renderAll(){const keep=$('#fq')?.value;
+ $('#app').innerHTML=`<header><h1>${esc(D.title)}</h1><p>${esc(D.org)}</p><p>Morning Session (Batch I): ${SES()[0].t} &nbsp;|&nbsp; Afternoon Session (Batch II): ${SES()[1].t}</p><div class="bar noprint" style="justify-content:center;margin:10px 0 0"><button class="alt" style="color:var(--act);border-color:var(--act)" onclick="print()">Print / Save PDF</button>${admin?'':'<button class="alt" style="color:var(--act);border-color:var(--act)" onclick="loginBox()">Admin Login</button>'}</div></header>
+ <main>${admin?adminHTML():''}<section class="card"><div class="bar noprint"><label>Semester<select onchange="F.sem=this.value;drawTT()"><option value="">All</option>${SEM.filter(x=>D.subs.some(s=>s.s===x)).map(x=>`<option ${F.sem===x?'selected':''}>${x}</option>`).join('')}</select></label><label>Search<input id="fq" placeholder="Subject, code or staff" value="${esc(keep??F.q)}" oninput="F.q=this.value.toLowerCase();drawTT()"></label></div><div class="wrap" id="tt"></div><p class="mu">Each class has two batches: Batch I in the Morning session and Batch II in the Afternoon session. Sessions never overlap.</p></section></main>`;
+ drawTT();chk()}
+renderAll();
+(async()=>{if(GOOGLE_SCRIPT_URL.startsWith('PASTE'))return;try{const r=await(await fetch(GOOGLE_SCRIPT_URL)).json();if(r.ok&&r.data){D=r.data;renderAll()}}catch(e){}})();
+</script>
+</body>
+</html>
